@@ -1,5 +1,0 @@
-class variables {
-    fun main(){
-
-    }
-}
