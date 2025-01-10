@@ -4,7 +4,6 @@ fun main(){
 
     var num: Int
     var factorial: Int
-    var i: Int
     val input = Scanner(System.`in`)
 
     println("Ingrese el numero factorial: ")
