@@ -1,23 +1,24 @@
+import java.util.Scanner
+
 fun main(){
-    class Factorial {
-        fun main(){
-            var num: Int
-            var factorial: Int
-            var i: Int
-            println("Ingrese el numero factorial: ")
-            factorial = readLine()?.toInt() ?: 0
 
-            println("Ingrese el numero factorial denuevo: ")
-            num = readLine()?.toInt() ?: 0
+    var num: Int
+    var factorial: Int
+    var i: Int
+    val input = Scanner(System.`in`)
 
-            for (i in 1.. factorial)
-            {
-                factorial = (factorial - 1)
-                println("$i x $factorial")
-                num = (num * factorial)
-                println("= $num")
+    println("Ingrese el numero factorial: ")
+    factorial = input.nextInt()
 
-            }
-        }
+    println("Ingrese el numero factorial denuevo: ")
+    num = input.nextInt()
+
+    for (i in factorial downTo 1)
+    {
+        factorial = (factorial - 1)
+        println("$num x $factorial")
+        num = (num * factorial)
+        println("= $num")
     }
+
 }
